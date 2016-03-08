@@ -1,0 +1,157 @@
+/* CODE */
+.codepages { padding: 2em 0 0}
+.codepages article {
+    padding: .714em 2.143em;
+    margin-bottom: 4em;
+    background-color: #fdfdfd;
+    color: #464646;
+    border-radius: 2px;
+    border: 0 solid #fdfdfd;
+    -webkit-transition: color 50ms,border 50ms,margin 50ms;
+    -moz-transition: color 50ms,border 50ms,margin 50ms;
+    -o-transition: color 50ms,border 50ms,margin 50ms;
+    transition: color 50ms,border 50ms,margin 50ms
+}
+.codepages p {
+    max-height: 8.571em;
+    overflow: hidden;
+    line-height: 1.714em;
+    color: #464646!important
+}
+.codepages article:hover {
+    margin: 0 -1em 4em;
+    border-width: 0 1em;
+    color: #ff6760
+}/* CONTACT */
+.contact div {
+	font-size: 2em;
+	margin-bottom: 0.2em;
+}
+.contact span {
+	position: absolute;
+}
+.contact input,
+.contact textarea {
+	width: 100%;
+	height: 4em;
+	padding-left: 4em;
+	border: 2px solid #efefef;
+	background-color: #fff;
+	-webkit-transition: border-color 200ms ease;
+	-moz-transition: border-color 200ms ease;
+	-o-transition: border-color 200ms ease;
+	transition: border-color 200ms ease;
+}
+.contact textarea {
+	height: 10.6em;
+	padding-top: 1.2em;
+	resize: vertical;
+}
+.contact input:focus,
+.contact textarea:focus,
+.contact .submit:hover {
+	outline: none;
+	border-color: #ff6760;
+}
+input[disabled][value=""] {
+	display: none;
+}
+.contact input[disabled],
+.contact .submit {
+	padding-left: 0;
+	color: #999;
+}
+.contact .submit:hover {
+	border-color: #83ff86;
+}
+.contact .submit[disabled]:hover {
+	border-color: #ff6760;
+}
+
+.social {
+    text-align: center;
+/*	padding: 0;*/
+/*	margin: 0 auto;*/
+}
+.social span {
+    font-size: 4em;
+}
+/* HOME */
+.caption { margin: 0.833em auto}
+.caption strong { font-weight: 900}
+.caption .color { color: #ff6760}
+.caption h1 { font-size: 4.286em}
+.caption h2 { font-size: 2.857em}
+.caption h1,.caption h2 {
+    position: relative;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 29px;
+    font-weight: 300;
+    line-height: normal;
+    white-space: nowrap
+}
+
+.rowbox a {
+    color: #ff6760;
+    text-decoration: none
+}
+.rowbox a:hover { color: #616161!important}
+.rowbox .row span::before {
+    width: 1em;
+    margin: 0.174em 0.167em 0;
+    font-size: 8.571em;
+    text-align: center;
+    float: left;
+}
+.rowbox .rowtext {
+    text-align: center;
+    font-size: 1.143em;
+    padding: 0 2.5em;
+    margin-left: 10em;
+    min-height: 8.75em
+}
+.rowbox .rowtext h3 {
+    padding-top: 1.250em;
+    margin-bottom: 0;
+    font-size: 1.429em
+}
+.rowbox .row p { line-height: 1.5em}
+.rowbox .row span,.rowbox .rowtext h3 {
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in
+}
+.row:hover { color: #ff6760!important}
+.row:hover p { color: #616161}/* LINK */
+/* QUERIES */
+@media only screen and (max-width: 800px) {
+	.contact input,
+	.contact textarea {
+		height: 3.4em;
+		padding-left: 3.4em
+	}
+	.contact textarea {
+		height: 9em;
+		padding-top: .9em
+	}
+}
+@media only screen and (max-width: 640px) {
+	.contact input,
+	.contact textarea {
+		height: 3em;
+		padding-left: 3em
+	}
+	.contact textarea {
+		height: 8em;
+		padding-top: .6em
+	}
+	.codepages article {
+        border-radius: 0;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
